@@ -44,6 +44,11 @@ export class AppComponent {
       title: 'Checkbox',
       url: '/checkbox',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Chip',
+      url: '/chip',
+      icon: 'arrow-dropright'
     }
   ];
 

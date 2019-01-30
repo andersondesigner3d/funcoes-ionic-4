@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'badge', loadChildren: './badge/badge.module#BadgePageModule' },
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
   { path: 'cards', loadChildren: './cards/cards.module#CardsPageModule' },
-  { path: 'checkbox', loadChildren: './checkbox/checkbox.module#CheckboxPageModule' }
+  { path: 'checkbox', loadChildren: './checkbox/checkbox.module#CheckboxPageModule' },
+  { path: 'chip', loadChildren: './chip/chip.module#ChipPageModule' }
 ];
 
 @NgModule({
