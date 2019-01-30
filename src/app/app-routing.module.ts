@@ -13,7 +13,12 @@ const routes: Routes = [
   },
   {
     path: 'action-sheet', 
-    loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' }
+    loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
+  { path: 'alert', loadChildren: './alert/alert.module#AlertPageModule' },
+  { path: 'badge', loadChildren: './badge/badge.module#BadgePageModule' },
+  { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
+  { path: 'cards', loadChildren: './cards/cards.module#CardsPageModule' },
+  { path: 'checkbox', loadChildren: './checkbox/checkbox.module#CheckboxPageModule' }
 ];
 
 @NgModule({

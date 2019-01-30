@@ -19,6 +19,31 @@ export class AppComponent {
       title: 'Action Sheet',
       url: '/action-sheet',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Alert',
+      url: '/alert',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Badge',
+      url: '/badge',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Buttons',
+      url: '/buttons',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Cards',
+      url: '/cards',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Checkbox',
+      url: '/checkbox',
+      icon: 'arrow-dropright'
     }
   ];
 
