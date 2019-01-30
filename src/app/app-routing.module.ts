@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'home',//home
     pathMatch: 'full'
   },
   {
@@ -12,9 +12,8 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+    path: 'action-sheet', 
+    loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' }
 ];
 
 @NgModule({
