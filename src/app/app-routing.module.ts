@@ -19,7 +19,9 @@ const routes: Routes = [
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
   { path: 'cards', loadChildren: './cards/cards.module#CardsPageModule' },
   { path: 'checkbox', loadChildren: './checkbox/checkbox.module#CheckboxPageModule' },
-  { path: 'chip', loadChildren: './chip/chip.module#ChipPageModule' }
+  { path: 'chip', loadChildren: './chip/chip.module#ChipPageModule' },
+  { path: 'date-time', loadChildren: './date-time/date-time.module#DateTimePageModule' },
+  { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' }
 ];
 
 @NgModule({

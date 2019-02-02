@@ -49,6 +49,16 @@ export class AppComponent {
       title: 'Chip',
       url: '/chip',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Date e Time',
+      url: '/date-time',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'FAB',
+      url: '/fab',
+      icon: 'arrow-dropright'
     }
   ];
 
