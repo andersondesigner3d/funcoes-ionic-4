@@ -21,7 +21,9 @@ const routes: Routes = [
   { path: 'checkbox', loadChildren: './checkbox/checkbox.module#CheckboxPageModule' },
   { path: 'chip', loadChildren: './chip/chip.module#ChipPageModule' },
   { path: 'date-time', loadChildren: './date-time/date-time.module#DateTimePageModule' },
-  { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' }
+  { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
+  { path: 'inputs', loadChildren: './inputs/inputs.module#InputsPageModule' },
+  { path: 'textarea', loadChildren: './textarea/textarea.module#TextareaPageModule' }
 ];
 
 @NgModule({

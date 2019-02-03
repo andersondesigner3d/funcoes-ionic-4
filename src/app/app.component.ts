@@ -59,6 +59,16 @@ export class AppComponent {
       title: 'FAB',
       url: '/fab',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Inputs',
+      url: '/inputs',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Textarea',
+      url: '/textarea',
+      icon: 'arrow-dropright'
     }
   ];
 
