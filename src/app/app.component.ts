@@ -69,6 +69,16 @@ export class AppComponent {
       title: 'Textarea',
       url: '/textarea',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Itens',
+      url: '/itens',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Grid',
+      url: '/grid',
+      icon: 'arrow-dropright'
     }
   ];
 

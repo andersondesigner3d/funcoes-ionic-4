@@ -23,7 +23,9 @@ const routes: Routes = [
   { path: 'date-time', loadChildren: './date-time/date-time.module#DateTimePageModule' },
   { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
   { path: 'inputs', loadChildren: './inputs/inputs.module#InputsPageModule' },
-  { path: 'textarea', loadChildren: './textarea/textarea.module#TextareaPageModule' }
+  { path: 'textarea', loadChildren: './textarea/textarea.module#TextareaPageModule' },
+  { path: 'itens', loadChildren: './itens/itens.module#ItensPageModule' },
+  { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' }
 ];
 
 @NgModule({

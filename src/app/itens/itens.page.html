@@ -1,0 +1,312 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Itens
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>ion-item</h1>
+  <!-- Default Item -->
+  <ion-item>
+    <ion-label>
+      Item
+    </ion-label>
+  </ion-item>
+
+  <!-- Item as a Button -->
+  <ion-item (click)="buttonClick()">
+    <ion-label>
+      Button Item
+    </ion-label>
+  </ion-item>
+
+  <!-- Item as an Anchor -->
+  <ion-item href="home">
+    <ion-label>
+      Anchor Item
+    </ion-label>
+  </ion-item>
+
+  <ion-item color="secondary">
+    <ion-label>
+      Secondary Color Item
+    </ion-label>
+  </ion-item>
+
+  <h1>ion-item-divider</h1>
+  <ion-item-divider>
+    <ion-label>
+      Basic Item Divider
+    </ion-label>
+  </ion-item-divider>
+
+  <ion-item-divider color="secondary">
+    <ion-label>
+      Secondary Item Divider
+    </ion-label>
+  </ion-item-divider>
+
+  <!-- Item Dividers in a List -->
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>
+        Section A
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>A1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>A2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>A3</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>A4</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>A5</ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>
+        Section B
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>B1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>B2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>B3</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>B4</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>B5</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h1>ion-item-group</h1>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>A</ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Angola</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Argentina</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Armenia</ion-label>
+    </ion-item>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>B</ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>Bangladesh</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Belarus</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Belgium</ion-label>
+    </ion-item>
+  </ion-item-group>
+
+
+  <!-- They can also be used to group sliding items -->
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>
+        Fruits
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>
+          <h3>Grapes</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option>
+          Favorite
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>
+          <h3>Apples</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option>
+          Favorite
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>
+        Vegetables
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>
+          <h3>Carrots</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option>
+          Favorite
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>
+          <h3>Celery</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option>
+          Favorite
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-item-group>
+
+  <h1>ion-item-sliding</h1>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-item-option>Favorite</ion-item-option>
+        <ion-item-option color="danger">Share</ion-item-option>
+      </ion-item-options>
+
+      <ion-item-options side="end">
+        <ion-item-option>Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h1>ion-label</h1>
+
+  <!-- Default Label -->
+  <ion-label>Label</ion-label>
+  <br>
+  <!-- Label Colors -->
+  <ion-label color="primary">Primary Label</ion-label>
+  <br>
+  <ion-label color="secondary">Secondary Label</ion-label>
+  <br>
+  <ion-label color="danger">Danger Label</ion-label>
+  <br>
+  <ion-label color="light">Light Label</ion-label>
+  <br>
+  <ion-label color="dark">Dark Label</ion-label>
+
+  <!-- Item Labels -->
+  <ion-item>
+    <ion-label>Default Item</ion-label>
+  </ion-item>
+
+  <ion-item text-wrap>
+    <ion-label>
+      Multi-line text that should wrap when it is too long
+      to fit on one line in the item.
+    </ion-label>
+  </ion-item>
+
+  <!-- Input Labels -->
+  <ion-item>
+    <ion-label>Default Input</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Fixed</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Floating</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Toggle</ion-label>
+    <ion-toggle slot="end" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Toggle</ion-label>
+    <ion-toggle slot="start" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-checkbox slot="start" checked></ion-checkbox>
+    <ion-label>Checkbox</ion-label>
+  </ion-item>
+
+  <h1>ion-note</h1>
+
+  <!-- Default Note -->
+  <ion-note>Default Note</ion-note><br>
+
+  <!-- Note Colors -->
+  <ion-note color="primary">Primary Note</ion-note><br>
+  <ion-note color="secondary">Secondary Note</ion-note><br>
+  <ion-note color="danger">Danger Note</ion-note><br>
+  <ion-note color="light">Light Note</ion-note><br>
+  <ion-note color="dark">Dark Note</ion-note><br>
+
+  <!-- Notes in a List -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Note (End)</ion-label>
+      <ion-note slot="end">On</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-note slot="start">Off</ion-note>
+      <ion-label>Note (Start)</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
