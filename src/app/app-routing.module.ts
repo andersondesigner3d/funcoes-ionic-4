@@ -25,7 +25,9 @@ const routes: Routes = [
   { path: 'inputs', loadChildren: './inputs/inputs.module#InputsPageModule' },
   { path: 'textarea', loadChildren: './textarea/textarea.module#TextareaPageModule' },
   { path: 'itens', loadChildren: './itens/itens.module#ItensPageModule' },
-  { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' }
+  { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' },
+  { path: 'images-avatar', loadChildren: './images-avatar/images-avatar.module#ImagesAvatarPageModule' },
+  { path: 'splitpane-menu', loadChildren: './splitpane-menu/splitpane-menu.module#SplitpaneMenuPageModule' }
 ];
 
 @NgModule({

@@ -79,6 +79,16 @@ export class AppComponent {
       title: 'Grid',
       url: '/grid',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Images e Avatar',
+      url: '/images-avatar',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Splitepane e Menu',
+      url: '/splitpane-menu',
+      icon: 'arrow-dropright'
     }
   ];
 
