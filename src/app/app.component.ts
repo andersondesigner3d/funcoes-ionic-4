@@ -99,6 +99,11 @@ export class AppComponent {
       title: 'Navegação',
       url: '/navegacao',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Popover',
+      url: '/popover',
+      icon: 'arrow-dropright'
     }
   ];
 

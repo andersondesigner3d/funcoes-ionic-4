@@ -10,20 +10,20 @@ import { isNull } from 'util';
 })
 export class ModalPage implements OnInit {
 
-  constructor(private modCtrl : ModalController) { }
+  constructor(private modCtrl: ModalController) { }
 
   ngOnInit() {
   }
 
-  async abrirModal(){
+  async abrirModal() {
     let modal = await this.modCtrl.create({
       component: ModalconteudoPage,
-      componentProps: {nome : 'Anderson Rocha', idade : 37},
+      componentProps: { nome: 'Anderson Rocha', idade: 37 },
     });
     modal.onDidDismiss()
-    .then((data) => {
-      alert(data.data);
-  });
+      .then((data) => {
+        alert(data.data);
+      });
     return await modal.present();
   }
 

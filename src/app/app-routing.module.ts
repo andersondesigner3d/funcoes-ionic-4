@@ -27,7 +27,8 @@ const routes: Routes = [
   { path: 'modalconteudo', loadChildren: './modalconteudo/modalconteudo.module#ModalconteudoPageModule' },
   { path: 'navegacao', loadChildren: './navegacao/navegacao.module#NavegacaoPageModule' },
   { path: 'navegacao2', loadChildren: './navegacao2/navegacao2.module#Navegacao2PageModule' },
-  { path: 'navegacao3', loadChildren: './navegacao3/navegacao3.module#Navegacao3PageModule' }
+  { path: 'navegacao3', loadChildren: './navegacao3/navegacao3.module#Navegacao3PageModule' },
+  { path: 'popover', loadChildren: './popover/popover.module#PopoverPageModule' }
 ];
 
 @NgModule({
