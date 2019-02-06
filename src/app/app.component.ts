@@ -89,6 +89,16 @@ export class AppComponent {
       title: 'Splitepane e Menu',
       url: '/splitpane-menu',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Modal',
+      url: '/modal',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Navegação',
+      url: '/navegacao',
+      icon: 'arrow-dropright'
     }
   ];
 

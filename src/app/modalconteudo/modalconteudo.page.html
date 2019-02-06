@@ -1,0 +1,10 @@
+<ion-content padding>
+  <ion-card class='animated bounceInDown' padding>
+    <h1>Este é o conteúdo do modal!</h1>
+    <p>Seu nome é: {{nome}}</p>
+    <p>Sua idade é: {{idade}}</p>
+    <p>Digite um valor pra levar como parâmetro para a página principal do modal</p>
+    <ion-input type='text' [(ngModel)]='resposta'></ion-input>
+    <ion-button expand='block' (click)='fechaModal()'>Fechar Modal e enviar parâmetro</ion-button>
+  </ion-card>
+</ion-content>

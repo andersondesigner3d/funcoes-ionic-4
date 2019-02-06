@@ -4,16 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',//home
+    redirectTo: 'navegacao',//home
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'action-sheet', 
-    loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule'},
+  { path: 'action-sheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
   { path: 'alert', loadChildren: './alert/alert.module#AlertPageModule' },
   { path: 'badge', loadChildren: './badge/badge.module#BadgePageModule' },
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
@@ -27,7 +22,12 @@ const routes: Routes = [
   { path: 'itens', loadChildren: './itens/itens.module#ItensPageModule' },
   { path: 'grid', loadChildren: './grid/grid.module#GridPageModule' },
   { path: 'images-avatar', loadChildren: './images-avatar/images-avatar.module#ImagesAvatarPageModule' },
-  { path: 'splitpane-menu', loadChildren: './splitpane-menu/splitpane-menu.module#SplitpaneMenuPageModule' }
+  { path: 'splitpane-menu', loadChildren: './splitpane-menu/splitpane-menu.module#SplitpaneMenuPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
+  { path: 'modalconteudo', loadChildren: './modalconteudo/modalconteudo.module#ModalconteudoPageModule' },
+  { path: 'navegacao', loadChildren: './navegacao/navegacao.module#NavegacaoPageModule' },
+  { path: 'navegacao2', loadChildren: './navegacao2/navegacao2.module#Navegacao2PageModule' },
+  { path: 'navegacao3', loadChildren: './navegacao3/navegacao3.module#Navegacao3PageModule' }
 ];
 
 @NgModule({

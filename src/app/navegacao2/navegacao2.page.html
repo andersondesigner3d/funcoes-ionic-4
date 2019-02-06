@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>navegacao2</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="comPush()">
+    Router com Push
+  </ion-button>
+  <br>
+  <ion-button (click)="comPush2()">
+    NavController com Push
+  </ion-button>
+  <br>
+  <ion-button (click)="semPilha()">
+    NavController sem Pilha de navegação.
+  </ion-button>
+  <br>
+  <p>Os parametros vindos foram:</p>
+  <p>ID: {{id}}</p>
+  <p>Idade: {{idade}}</p>
+  <p>Nome: {{nome}}</p>
+  <p>Valor: {{valor}}</p>
+</ion-content>
