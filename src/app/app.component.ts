@@ -109,6 +109,16 @@ export class AppComponent {
       title: 'Loading',
       url: '/loading',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Progress Bar',
+      url: '/progress-bar',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Radio',
+      url: '/radio',
+      icon: 'arrow-dropright'
     }
   ];
 

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Radio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Nome</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Anderson</ion-label>
+        <ion-radio slot="start" value="Anderson"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Rhayanne</ion-label>
+        <ion-radio slot="start" checked value="Rhayanne"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Lívia</ion-label>
+        <ion-radio slot="start" value="Lívia"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Tony</ion-label>
+        <ion-radio slot="start" disabled value="Tony"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+  <p>Valor selecionado: {{nome}}</p>
+</ion-content>

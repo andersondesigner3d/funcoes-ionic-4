@@ -8,6 +8,8 @@ import { LoadingController } from '@ionic/angular';
 })
 export class LoadingPage implements OnInit {
 
+  mostrar : boolean = false;
+
   constructor(public loadingController: LoadingController) { }
 
   ngOnInit() {
@@ -23,6 +25,7 @@ export class LoadingPage implements OnInit {
     loading.onDidDismiss()
       .then((data) => {
         alert('Processo concluído com êxito!');
+        this.mostrar = true;
       });
     return await loading.present();
   }

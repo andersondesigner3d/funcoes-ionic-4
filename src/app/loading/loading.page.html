@@ -13,4 +13,38 @@
   <ion-button (click)="presentLoading()">
     Loading 1
   </ion-button>
+
+  <ion-card *ngIf="mostrar==true" padding>
+    <!-- Default Spinner -->
+    <p>default spinner</p>
+    <ion-spinner></ion-spinner>
+
+    <!-- Lines -->
+    <p>lines</p>
+    <ion-spinner name="lines"></ion-spinner>
+
+    <!-- Lines Small -->
+    <p>lines-small</p>
+    <ion-spinner name="lines-small"></ion-spinner>
+
+    <!-- Dots -->
+    <p>dots</p>
+    <ion-spinner name="dots"></ion-spinner>
+
+    <!-- Bubbles -->
+    <p>bubbles</p>
+    <ion-spinner name="bubbles"></ion-spinner>
+
+    <!-- Circles -->
+    <p>circles</p>
+    <ion-spinner name="circles"></ion-spinner>
+
+    <!-- Crescent -->
+    <p>crescent</p>
+    <ion-spinner name="crescent"></ion-spinner>
+
+    <!-- Paused Default Spinner -->
+    <p>paused</p>
+    <ion-spinner paused></ion-spinner>
+  </ion-card>
 </ion-content>
