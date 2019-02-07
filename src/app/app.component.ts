@@ -119,6 +119,11 @@ export class AppComponent {
       title: 'Radio',
       url: '/radio',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Range',
+      url: '/range',
+      icon: 'arrow-dropright'
     }
   ];
 

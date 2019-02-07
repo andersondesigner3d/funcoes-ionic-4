@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RadioPage implements OnInit {
 
-  nome : string;
   constructor() { }
 
   ngOnInit() {

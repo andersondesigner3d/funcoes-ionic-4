@@ -31,7 +31,8 @@ const routes: Routes = [
   { path: 'popover', loadChildren: './popover/popover.module#PopoverPageModule' },
   { path: 'loading', loadChildren: './loading/loading.module#LoadingPageModule' },
   { path: 'progress-bar', loadChildren: './progress-bar/progress-bar.module#ProgressBarPageModule' },
-  { path: 'radio', loadChildren: './radio/radio.module#RadioPageModule' }
+  { path: 'radio', loadChildren: './radio/radio.module#RadioPageModule' },
+  { path: 'range', loadChildren: './range/range.module#RangePageModule' }
 ];
 
 @NgModule({
