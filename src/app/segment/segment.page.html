@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Segment
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+
+      <ion-segment [(ngModel)]='pet'>
+        <ion-segment-button value='kittens' (ionSelect)="segmentButtonClicked($event)">
+          Gatinhos
+        </ion-segment-button>
+        <ion-segment-button value='puppies' (ionSelect)="segmentButtonClicked($event)">
+          Cachorrinhos
+        </ion-segment-button>
+        <ion-segment-button value='ducklings' (ionSelect)="segmentButtonClicked($event)">
+          Patinhos
+        </ion-segment-button>
+      </ion-segment>
+    
+      <div [(ngSwitch)]='pet'>
+    
+        <ion-card *ngSwitchCase="'puppies'" padding>
+          <ion-img src="../assets/images/cachorrinhos.jpg"></ion-img>
+          <p>Lindos cachorrinhos.</p>    
+        </ion-card>
+    
+        <!--fim dos puppies inicio dos kittens-->
+    
+        <ion-card *ngSwitchCase="'kittens'" padding>
+            <ion-img src="../assets/images/gatinhos.jpg"></ion-img>
+        <p>Gatinhos fofos.</p>        
+        </ion-card>
+    
+        <!--fim dos kittens inicio dos ducklings-->
+        
+        <ion-card *ngSwitchCase="'ducklings'" padding>
+            <ion-img src="../assets/images/patinhos.jpg"></ion-img>
+        <p>Patinhos lindos.</p>        
+        </ion-card>
+    
+      </div>
+    
+    </ion-content>

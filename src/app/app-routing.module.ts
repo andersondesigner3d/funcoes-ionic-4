@@ -32,7 +32,10 @@ const routes: Routes = [
   { path: 'loading', loadChildren: './loading/loading.module#LoadingPageModule' },
   { path: 'progress-bar', loadChildren: './progress-bar/progress-bar.module#ProgressBarPageModule' },
   { path: 'radio', loadChildren: './radio/radio.module#RadioPageModule' },
-  { path: 'range', loadChildren: './range/range.module#RangePageModule' }
+  { path: 'range', loadChildren: './range/range.module#RangePageModule' },
+  { path: 'refresher', loadChildren: './refresher/refresher.module#RefresherPageModule' },
+  { path: 'searchbar', loadChildren: './searchbar/searchbar.module#SearchbarPageModule' },
+  { path: 'segment', loadChildren: './segment/segment.module#SegmentPageModule' }
 ];
 
 @NgModule({

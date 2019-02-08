@@ -124,6 +124,21 @@ export class AppComponent {
       title: 'Range',
       url: '/range',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Refresher',
+      url: '/refresher',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Searchbar',
+      url: '/searchbar',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Segment',
+      url: '/segment',
+      icon: 'arrow-dropright'
     }
   ];
 
