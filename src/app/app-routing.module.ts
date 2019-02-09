@@ -35,7 +35,9 @@ const routes: Routes = [
   { path: 'range', loadChildren: './range/range.module#RangePageModule' },
   { path: 'refresher', loadChildren: './refresher/refresher.module#RefresherPageModule' },
   { path: 'searchbar', loadChildren: './searchbar/searchbar.module#SearchbarPageModule' },
-  { path: 'segment', loadChildren: './segment/segment.module#SegmentPageModule' }
+  { path: 'segment', loadChildren: './segment/segment.module#SegmentPageModule' },
+  { path: 'select', loadChildren: './select/select.module#SelectPageModule' },
+  { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' }
 ];
 
 @NgModule({

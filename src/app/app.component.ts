@@ -139,6 +139,16 @@ export class AppComponent {
       title: 'Segment',
       url: '/segment',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Select',
+      url: '/select',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Slides',
+      url: '/slides',
+      icon: 'arrow-dropright'
     }
   ];
 
