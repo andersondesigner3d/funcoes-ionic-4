@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Toggle
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- Toggle Colors -->
+  <ion-toggle color="primary" checked></ion-toggle>
+  <br>
+  <ion-toggle color="secondary" checked></ion-toggle>
+  <br>
+  <ion-toggle color="danger" checked></ion-toggle>
+  <br>
+  <ion-toggle color="light" checked></ion-toggle>
+  <br>
+  <ion-toggle color="dark" checked></ion-toggle>
+  <br>
+  <!-- Toggles in a List -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Pepperoni</ion-label>
+      <ion-toggle (ionChange)='dizValor()' [(ngModel)]='pepperoni'></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sausage</ion-label>
+      <ion-toggle disabled="true"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mushrooms</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

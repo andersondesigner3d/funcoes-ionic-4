@@ -149,6 +149,21 @@ export class AppComponent {
       title: 'Slides',
       url: '/slides',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Toast',
+      url: '/toast',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Toggle',
+      url: '/toggle',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Toobar',
+      url: '/toobar',
+      icon: 'arrow-dropright'
     }
   ];
 

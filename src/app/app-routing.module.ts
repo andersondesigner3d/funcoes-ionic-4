@@ -37,7 +37,10 @@ const routes: Routes = [
   { path: 'searchbar', loadChildren: './searchbar/searchbar.module#SearchbarPageModule' },
   { path: 'segment', loadChildren: './segment/segment.module#SegmentPageModule' },
   { path: 'select', loadChildren: './select/select.module#SelectPageModule' },
-  { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' }
+  { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
+  { path: 'toast', loadChildren: './toast/toast.module#ToastPageModule' },
+  { path: 'toggle', loadChildren: './toggle/toggle.module#TogglePageModule' },
+  { path: 'toobar', loadChildren: './toobar/toobar.module#ToobarPageModule' }
 ];
 
 @NgModule({
