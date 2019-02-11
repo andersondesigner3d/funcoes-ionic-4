@@ -8,12 +8,23 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-list-header>Componentes simples</ion-list-header>
+          <ion-list-header>Componentes Simples</ion-list-header>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
                 {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <ion-list>
+          <ion-list-header>Componentes Navivos</ion-list-header>
+          <ion-menu-toggle auto-hide="false" *ngFor="let k of appPages2">
+            <ion-item [routerDirection]="'root'" [routerLink]="[k.url]">
+              <ion-icon slot="start" [name]="k.icon"></ion-icon>
+              <ion-label>
+                {{k.title}}
               </ion-label>
             </ion-item>
           </ion-menu-toggle>

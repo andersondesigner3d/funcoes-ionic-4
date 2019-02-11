@@ -166,6 +166,19 @@ export class AppComponent {
       icon: 'arrow-dropright'
     }
   ];
+  
+  public appPages2 = [
+    {
+      title: 'Câmera',
+      url: '/camera',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Barcode',
+      url: '/barcode',
+      icon: 'arrow-dropright'
+    }
+  ];
 
   constructor(
     private platform: Platform,

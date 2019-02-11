@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'navegacao',//home
+    redirectTo: 'home',//home
     pathMatch: 'full'
   },
   { path: 'home', loadChildren: './home/home.module#HomePageModule'},
@@ -40,7 +40,9 @@ const routes: Routes = [
   { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
   { path: 'toast', loadChildren: './toast/toast.module#ToastPageModule' },
   { path: 'toggle', loadChildren: './toggle/toggle.module#TogglePageModule' },
-  { path: 'toobar', loadChildren: './toobar/toobar.module#ToobarPageModule' }
+  { path: 'toobar', loadChildren: './toobar/toobar.module#ToobarPageModule' },
+  { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
+  { path: 'barcode', loadChildren: './barcode/barcode.module#BarcodePageModule' }
 ];
 
 @NgModule({
