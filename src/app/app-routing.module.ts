@@ -42,7 +42,9 @@ const routes: Routes = [
   { path: 'toggle', loadChildren: './toggle/toggle.module#TogglePageModule' },
   { path: 'toobar', loadChildren: './toobar/toobar.module#ToobarPageModule' },
   { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
-  { path: 'barcode', loadChildren: './barcode/barcode.module#BarcodePageModule' }
+  { path: 'barcode', loadChildren: './barcode/barcode.module#BarcodePageModule' },
+  { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
+  { path: 'file-transfer', loadChildren: './file-transfer/file-transfer.module#FileTransferPageModule' }
 ];
 
 @NgModule({

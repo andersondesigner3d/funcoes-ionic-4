@@ -83,7 +83,16 @@
       "cordova-base64-to-gallery": {},
       "phonegap-plugin-barcodescanner": {
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
-      }
+      },
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-chooser": {},
+      "cordova-plugin-filechooser": {},
+      "cordova-plugin-filepath": {},
+      "cordova-plugin-file-opener2": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-file": {}
     },
     "platforms": [
       "android"

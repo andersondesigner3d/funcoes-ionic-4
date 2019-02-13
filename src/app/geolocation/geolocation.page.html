@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Geolocation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="captura()">
+    Capturar Geolocalização
+  </ion-button>
+  <p *ngIf="latitude!=null">Latitude: {{latitude}}</p>
+  <p *ngIf="longitude!=null">Latitude: {{longitude}}</p>
+
+</ion-content>

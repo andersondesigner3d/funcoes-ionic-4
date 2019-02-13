@@ -177,6 +177,16 @@ export class AppComponent {
       title: 'Barcode',
       url: '/barcode',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Geolocation',
+      url: '/geolocation',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Files',
+      url: '/file-transfer',
+      icon: 'arrow-dropright'
     }
   ];
 
