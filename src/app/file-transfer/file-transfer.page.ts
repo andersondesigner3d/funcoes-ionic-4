@@ -12,7 +12,7 @@ import { AlertController, LoadingController } from '@ionic/angular';
 })
 export class FileTransferPage implements OnInit {
 
-  constructor(private fileChooser: FileChooser, private filePath: FilePath, private fileOpener: FileOpener, private transfer: FileTransfer, private alertCtrl : AlertController, public loadingController: LoadingController) { }
+  constructor(private fileChooser: FileChooser, private filePath: FilePath, private fileOpener: FileOpener, private transfer: FileTransfer, private alertCtrl: AlertController, public loadingController: LoadingController) { }
 
   ngOnInit() {
   }
@@ -30,23 +30,23 @@ export class FileTransferPage implements OnInit {
             if (extencao[1] == 'pdf') {
               this.fileOpener.open(filePath, 'application/pdf')
                 .then(() => alert('O arquivo foi aberto'))
-                .catch(e => alert('Erro ao abrir arquivo '+ e));
-            } else if (extencao[1] == 'jpeg'){
+                .catch(e => alert('Erro ao abrir arquivo ' + e));
+            } else if (extencao[1] == 'jpeg') {
               this.fileOpener.open(filePath, 'image/jpeg')
                 .then(() => alert('O arquivo foi aberto'))
-                .catch(e => alert('Erro ao abrir arquivo '+ e));
-            } else if (extencao[1] == 'jpg'){
+                .catch(e => alert('Erro ao abrir arquivo ' + e));
+            } else if (extencao[1] == 'jpg') {
               this.fileOpener.open(filePath, 'image/jpg')
                 .then(() => alert('O arquivo foi aberto'))
-                .catch(e => alert('Erro ao abrir arquivo '+ e));
-            } else if (extencao[1] == 'gif'){
+                .catch(e => alert('Erro ao abrir arquivo ' + e));
+            } else if (extencao[1] == 'gif') {
               this.fileOpener.open(filePath, 'image/gif')
                 .then(() => alert('O arquivo foi aberto'))
-                .catch(e => alert('Erro ao abrir arquivo '+ e));
-            } else if (extencao[1] == 'png'){
+                .catch(e => alert('Erro ao abrir arquivo ' + e));
+            } else if (extencao[1] == 'png') {
               this.fileOpener.open(filePath, 'image/png')
                 .then(() => alert('O arquivo foi aberto'))
-                .catch(e => alert('Erro ao abrir arquivo '+ e));
+                .catch(e => alert('Erro ao abrir arquivo ' + e));
             } else {
               alert('O arquivo não é um PDF ou uma imagem válida!');
             }
@@ -76,16 +76,16 @@ export class FileTransferPage implements OnInit {
             }
 
             this.presentLoading();
-            
+
             const fileTransfer: FileTransferObject = this.transfer.create();
 
-            fileTransfer.upload(filePath,'https://www.acumulando.com.br/ionic_file_transfer.php', options)
+            fileTransfer.upload(filePath, 'https://www.acumulando.com.br/ionic_file_transfer.php', options)
               .then((data) => {
                 this.loadingDismiss();
                 this.abreAlert();
               }, (err) => {
                 this.loadingDismiss();
-                alert('Erro na transferência: '+err);
+                alert('Erro na transferência: ' + err);
               })
 
           })
@@ -106,7 +106,7 @@ export class FileTransferPage implements OnInit {
     return await this.loadingController.dismiss().then(() => console.log('dismissed'));
   }
 
-  async abreAlert(){
+  async abreAlert() {
     const alert = await this.alertCtrl.create({
       header: 'Upload completo!',
       subHeader: 'Seu arquivo foi enviado para o servidor.',
@@ -114,6 +114,6 @@ export class FileTransferPage implements OnInit {
       buttons: ['ok']
     });
     await alert.present();
-  }
+  }  
 
 }

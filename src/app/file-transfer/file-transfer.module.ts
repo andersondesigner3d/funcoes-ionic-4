@@ -11,6 +11,7 @@ import { FilePath } from '@ionic-native/file-path/ngx';
 import { FileOpener } from '@ionic-native/file-opener/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -29,7 +30,7 @@ const routes: Routes = [
     FileChooser,
     FilePath,
     FileOpener,
-    FileTransfer
+    FileTransfer,
   ],
   declarations: [FileTransferPage]
 })
