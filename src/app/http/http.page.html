@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      HttpClient
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card padding class='animated bounceInLeft'>
+    <ion-card-title>Adicionar Usuários:</ion-card-title>
+    <ion-item>
+      <ion-label>E-mail:</ion-label>
+      <ion-input [(ngModel)]='emailcadastro' type='text' placeholder="Digite o e-mail aqui"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Senha:</ion-label>
+      <ion-input [(ngModel)]='senhacadastro' type='password' placeholder="Digite a senha aqui"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button shape='round' expand='full' (click)="post()">
+      Cadastrar Usuário
+    </ion-button>
+  </ion-card>
+  <p class='animated fadeIn'>Usuários cadastrados: <ion-badge color="primary">{{quantos}}</ion-badge></p>
+  <ion-virtual-scroll [items]='listausuarios' approxItemHeight="320px" class='animated bounceInRight'>
+    <ion-item *virtualItem="let item">
+      <ion-avatar slot='start'>
+        <img *ngIf="item.imagem!=null" src="{{item.imagem}}">
+        <img *ngIf="item.imagem==null" src="../assets/images/usuario-icon.jpg">
+      </ion-avatar>
+      <ion-label>
+        <p><strong>Email:</strong> {{item.email}}</p>
+        <p><strong>Senha:</strong> {{item.senha}}</p>
+      </ion-label>
+      <ion-button color='secondary' (click)='alertEditor(item.id,item.email)'>
+        <ion-icon name='md-create'></ion-icon>
+      </ion-button>
+      <ion-button color='danger' (click)='alertExclusor(item.id,item.email)'>
+        <ion-icon name='trash'></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-virtual-scroll>
+</ion-content>

@@ -48,7 +48,7 @@ export class FileTransferPage implements OnInit {
                 .then(() => alert('O arquivo foi aberto'))
                 .catch(e => alert('Erro ao abrir arquivo ' + e));
             } else {
-              alert('O arquivo não é um PDF ou uma imagem válida!');
+              this.erroArquivo();
             }
 
           })
@@ -85,7 +85,7 @@ export class FileTransferPage implements OnInit {
                 this.abreAlert();
               }, (err) => {
                 this.loadingDismiss();
-                alert('Erro na transferência: ' + err);
+                this.erroUpload();
               })
 
           })
@@ -114,6 +114,66 @@ export class FileTransferPage implements OnInit {
       buttons: ['ok']
     });
     await alert.present();
-  }  
+  }
+
+  download() {
+    const fileTransfer2: FileTransferObject = this.transfer.create();
+    const url = 'https://www.acumulando.com.br/marvel.mp3';
+    this.loadingDownload();
+    fileTransfer2.download(url, 'file:///storage/emulated/0/Donwload/arquivobaixado.mp3').then((entry) => {
+      this.loadingDismiss();
+      this.alertDownload();
+    }, (error) => {
+      this.erroDownload();
+    });
+  }
+
+  async loadingDownload() {
+    const loading = await this.loadingController.create({
+      message: 'Fazendo download do arquivo...',
+      spinner: 'bubbles'
+    });
+    return await loading.present();
+  }
+
+  async alertDownload() {
+    const alert = await this.alertCtrl.create({
+      header: 'Download completo!',
+      subHeader: 'Seu arquivo foi baixado para o smartphone.',
+      message: 'Agora você pode acessar o arquivo pelo smartphone',
+      buttons: ['ok']
+    });
+    await alert.present();
+  }
+
+  async erroDownload() {
+    const alert = await this.alertCtrl.create({
+      header: 'Erro no Download!',
+      subHeader: 'Seu arquivo foi não foi baixado para o smartphone.',
+      message: 'Tente novamente!',
+      buttons: ['ok']
+    });
+    await alert.present();
+  }
+
+  async erroUpload() {
+    const alert = await this.alertCtrl.create({
+      header: 'Erro no Upload!',
+      subHeader: 'Não foi feito o upload do arquivo.',
+      message: 'Tente novamente!',
+      buttons: ['ok']
+    });
+    await alert.present();
+  }
+
+  async erroArquivo() {
+    const alert = await this.alertCtrl.create({
+      header: 'Erro ao abrir Arquivo!',
+      subHeader: 'O arquivo não pode ser aberto',
+      message: 'O arquivo não é um PDF ou uma imagem válida!',
+      buttons: ['ok']
+    });
+    await alert.present();
+  }
 
 }

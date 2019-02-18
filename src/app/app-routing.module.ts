@@ -44,7 +44,8 @@ const routes: Routes = [
   { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
   { path: 'barcode', loadChildren: './barcode/barcode.module#BarcodePageModule' },
   { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
-  { path: 'file-transfer', loadChildren: './file-transfer/file-transfer.module#FileTransferPageModule' }
+  { path: 'file-transfer', loadChildren: './file-transfer/file-transfer.module#FileTransferPageModule' },
+  { path: 'http', loadChildren: './http/http.module#HttpPageModule' }
 ];
 
 @NgModule({

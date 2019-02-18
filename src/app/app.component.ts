@@ -187,6 +187,11 @@ export class AppComponent {
       title: 'Files',
       url: '/file-transfer',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Http',
+      url: '/http',
+      icon: 'arrow-dropright'
     }
   ];
 
