@@ -45,7 +45,8 @@ const routes: Routes = [
   { path: 'barcode', loadChildren: './barcode/barcode.module#BarcodePageModule' },
   { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
   { path: 'file-transfer', loadChildren: './file-transfer/file-transfer.module#FileTransferPageModule' },
-  { path: 'http', loadChildren: './http/http.module#HttpPageModule' }
+  { path: 'http', loadChildren: './http/http.module#HttpPageModule' },
+  { path: 'infinitescroll', loadChildren: './infinitescroll/infinitescroll.module#InfinitescrollPageModule' }
 ];
 
 @NgModule({

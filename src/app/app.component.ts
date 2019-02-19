@@ -164,6 +164,11 @@ export class AppComponent {
       title: 'Toobar',
       url: '/toobar',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'InfiniteScroll',
+      url: '/infinitescroll',
+      icon: 'arrow-dropright'
     }
   ];
   
