@@ -46,7 +46,10 @@ const routes: Routes = [
   { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
   { path: 'file-transfer', loadChildren: './file-transfer/file-transfer.module#FileTransferPageModule' },
   { path: 'http', loadChildren: './http/http.module#HttpPageModule' },
-  { path: 'infinitescroll', loadChildren: './infinitescroll/infinitescroll.module#InfinitescrollPageModule' }
+  { path: 'infinitescroll', loadChildren: './infinitescroll/infinitescroll.module#InfinitescrollPageModule' },
+  { path: 'textospeech', loadChildren: './textospeech/textospeech.module#TextospeechPageModule' },
+  { path: 'storage-login', loadChildren: './storage-login/storage-login.module#StorageLoginPageModule' },
+  { path: 'logado-sair', loadChildren: './logado-sair/logado-sair.module#LogadoSairPageModule' }
 ];
 
 @NgModule({

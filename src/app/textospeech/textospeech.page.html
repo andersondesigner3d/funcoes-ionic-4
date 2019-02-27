@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Text To Speech
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-input [(ngModel)]='texto' type="text" placeholder="Digite algo pra ser falado aqui!"></ion-input>
+  <ion-button expand='full' (click)="falar()">
+    Falar
+  </ion-button>
+</ion-content>

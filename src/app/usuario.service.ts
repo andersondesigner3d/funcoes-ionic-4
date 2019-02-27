@@ -10,6 +10,7 @@ export class UsuarioService {
   url2 : string = 'https://www.acumulando.com.br/ionic_get_usuario';
   url3 : string = 'https://www.acumulando.com.br/ionic_put_usuario';
   url4 : string = 'https://www.acumulando.com.br/ionic_delete_usuario';
+  url5 : string = 'https://www.acumulando.com.br/ionic_login';
 
   constructor(private http : HttpClient) { }
 
@@ -33,6 +34,11 @@ export class UsuarioService {
     let headers = new HttpHeaders({'Content-Type':'application/x-www-form-urlencoded'});
     let postData = 'id='+idrecebido;
     return this.http.post(this.url4,postData,{headers : headers}).toPromise();
+  }
+
+  login(email:string,senha:string){
+    let headers = new HttpHeaders({'Content-Type':'application/json'});
+    return this.http.get(this.url5+'?email='+email+'&senha='+senha,{headers: headers}).toPromise();
   }
 
 }

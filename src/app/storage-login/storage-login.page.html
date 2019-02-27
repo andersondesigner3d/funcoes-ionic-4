@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login - Storage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div style='text-align: center;margin-top: 10%' class='animated bounceInRight'>
+    <img ion-img style='width: 50%;'
+      src='https://cdn1.iconfinder.com/data/icons/ui-colored-3-of-3/100/UI_3__23-512.png'>
+  </div>
+  <ion-card padding class='animated bounceInLeft'>
+    <ion-card-title color='primary'>Login de Usuários</ion-card-title>
+    <br>
+    <ion-item>
+      <ion-label position='stacked'>Email:</ion-label>
+      <ion-input type='email' [(ngModel)]='email' (keypress)='valida()' (keyup)='valida()'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position='stacked'>Senha:</ion-label>
+      <ion-input type='password' [(ngModel)]='senha' (keypress)='valida()' (keyup)='valida()'></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color='primary' (click)='logar()' expand='full'>
+      Entrar
+    </ion-button>
+  </ion-card>
+</ion-content>

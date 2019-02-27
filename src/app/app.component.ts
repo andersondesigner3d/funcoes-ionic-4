@@ -197,6 +197,16 @@ export class AppComponent {
       title: 'Http',
       url: '/http',
       icon: 'arrow-dropright'
+    },
+    {
+      title: 'Text To Speech',
+      url: '/textospeech',
+      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Storage - Login',
+      url: '/storage-login',
+      icon: 'arrow-dropright'
     }
   ];
 

@@ -1,3 +1,4 @@
+import { ModalconteudoPage } from './../modalconteudo/modalconteudo.page';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -6,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { ModalPage } from './modal.page';
-import { ModalconteudoPage } from '../modalconteudo/modalconteudo.page';
+
 
 const routes: Routes = [
   {
@@ -22,7 +23,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ModalPage, ModalconteudoPage],
+  declarations: [ModalPage],
   entryComponents: [ModalconteudoPage],
 })
 export class ModalPageModule {}

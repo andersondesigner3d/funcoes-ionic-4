@@ -1,7 +1,6 @@
 import { ModalconteudoPage } from './../modalconteudo/modalconteudo.page';
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { isNull } from 'util';
 
 @Component({
   selector: 'app-modal',
