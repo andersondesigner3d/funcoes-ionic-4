@@ -95,7 +95,10 @@
       "cordova-plugin-file-transfer": {},
       "cordova-plugin-file": {},
       "cordova-plugin-tts": {},
-      "cordova-sqlite-storage": {}
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-admob-free": {
+        "ADMOB_APP_ID": "<ca-app-pub-1383026776606715~2760541236>"
+      }
     },
     "platforms": [
       "android"

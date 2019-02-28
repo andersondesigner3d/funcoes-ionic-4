@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.funcoesionic4.andersonrocha" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.funcoesionic4.andersonrocha" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Funções Ionic 4</name>
     <description>Principais funções do Ionic 4.</description>
-    <author email="andersondesigner3d@hotmail.com" href="http://www.acumulando.com/">Funções Ionic 4 por Anderson Rocha</author>
+    <author email="andersondesigner3d@hotmail.com" href="https://cursoionic.wordpress.com">Funções Ionic 4 por Anderson Rocha</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -99,5 +99,8 @@
     <plugin name="cordova-plugin-advanced-http" spec="~2.0.4" />
     <plugin name="cordova-plugin-tts" spec="~0.2.3" />
     <plugin name="cordova-sqlite-storage" spec="~3.1.0" />
+    <plugin name="cordova-plugin-admob-free" spec="~0.25.0">
+        <variable name="ADMOB_APP_ID" value="&lt;ca-app-pub-1383026776606715~2760541236&gt;" />
+    </plugin>
     <engine name="android" spec="~7.1.4" />
 </widget>
